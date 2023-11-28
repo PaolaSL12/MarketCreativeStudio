@@ -43,15 +43,20 @@ header > h1 > img{
     display: none;
 }
 
-.navBar {
+nav  {
     display: flex;
     width: 60%;
+}
+.navBar {
+    display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
 }
 
-.navBar > li > a {
+nav > ul > li > a {
     color: var(--mcs-color-0);
+    font-size: 1.2em;
 }
 
 .main {
@@ -277,6 +282,9 @@ h3 {
     .navBar {
         display: none;
     }
+    nav {
+        justify-content: flex-end
+    }
     .menu > img{
         width: 25px;
         height: 25px;
@@ -384,8 +392,12 @@ h3 {
     header {
         justify-content: space-between;
     }
-    .navBar {
+    
+    nav {
         width: 70%;
+    }
+    .navBar {
+        width: 100%;
         font-size: 0.9em;
     }
     .message  {
