@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family:'Aviega';
+    src: local("Aviega"), url(./fonts/Avigea.ttf);
+}
+
+:root {
+    --mcs-primary-color: #0178c8;
+    --mcs-secondary-color:#F0C545;
+    --mcs-terciary-color:#9aa843;
+    --mcs-fourth-color: #35aaf2;
+    --mcs-button-color: #0061c9;
+    --mcs-color-0: #ffffff;
+    --mcs-color-80: #1f1f1f;
+    --mcs-color-100: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    height: 15vh;
+    background-color: var(--mcs-primary-color);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+header > h1 > img{
+    height: 100%;
+}
+
+.menu > img{
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+
+.navBar {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navBar > li > a {
+    color: var(--mcs-color-0);
+}
+
+.main {
+    height: auto;
+}
+
+.title {
+    height: 60vh;
+    width: 100%;
+    background-image: url(./assets/backgroundpic.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title > .spanTitle > h2 {
+    display: inline;
+    align-items: center;
+    font-family: 'Aviega';
+    color: var(--mcs-secondary-color);
+    font-size: 80px;
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.spanTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title > p {
+    color: var(--mcs-color-0);
+    font-size: 1.7em;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.message {
+    height: 10vh;
+    background-color: var(--mcs-terciary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message > p {
+    color: var(--mcs-color-0);
+    font-weight: 700;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.hero {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+}
+
+.design, .marketSticker {
+    width: 33%;
+}
+
+div > button {
+    background-color: var(--mcs-button-color);
+    color: var(--mcs-color-0);
+    padding: 10px 40px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    border: none;
+
+}
+.design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.design p {
+    text-align: center;
+    padding: 25px;
+    line-height: 1.6em;
+    font-weight: 300;
+}
+
+.marketSticker > img {
+    height: 100%;
+}
+
+.marketSticker {
+    overflow: hidden;
+}
+
+.secondMessage {
+    height: 10vh;
+    background-color: var(--mcs-fourth-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.secondMessage > p {
+    color: var(--mcs-color-0);
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.brands {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    margin: 20px 40px;
+    justify-content: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+.brands::-webkit-scrollbar {
+    display: none;
+}
+
+
+.brands > div {
+    width: 260px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.brands > div > img {
+    border-radius: 100%;
+}
+
+.personalDescription {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+}
+
+.personalDescription > div {
+    width: 50%;
+}
+.personalDescription > div > img {
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+   display: flex;
+   flex-direction: column;
+   padding: 20px;
+}
+.description > h3 {
+    text-align: center;
+    font-family: 'Aviega';
+    font-size: 2em;
+    font-weight: 400;
+ }
+
+.description > p {
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 25px;
+    font-weight: 300;
+ }
+
+ .thirdMessage {
+    height: 15vh;
+    background-color: var(--mcs-button-color);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--mcs-color-0);
+ }
+
+ .thirdMessage > h3 {
+    font-family: 'Aviega';
+    font-weight: 300;
+    font-size: 2.2em;
+ }
+
+ .thirdMessage > p {
+    font-size: 1.1em;
+ }
+
+ footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--mcs-color-80);
+    height: 18vh;
+    color: var(--mcs-color-0);
+ }
+
+@media screen and (max-width: 720px) {
+    body {
+        min-width: 370px;
+    }
+
+    header {
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+    }
+    .navBar {
+        display: none;
+    }
+    .menu > img{
+        width: 25px;
+        height: 25px;
+        display: block;
+    }
+    .title > .spanTitle > h2 {
+       font-size: 2em;
+    }
+    
+    .title > p {
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .message > p {
+        font-weight: 600;
+        font-size: 0.7em;
+        padding: 10px;
+    }
+    
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .marketSticker, .design {
+        width: 100%;
+        height: 370px;
+    }
+
+    h3 {
+        font-size: 1.9em;
+        text-align: center;
+    }
+
+    .design {
+        text-align: center;
+        padding: 25px;
+        line-height: 1.6em;
+        font-weight: 300;
+    }
+
+    .marketSticker > img {
+        width: 100%;
+    }
+
+    .marketSticker {
+        overflow: hidden;
+    }
+    .secondMessage {
+        display: flex;
+        height: 10vh;
+        background-color: var(--mcs-fourth-color);
+        text-align: center;
+    }
+    
+    .secondMessage > p {
+        color: var(--mcs-color-0);
+        font-weight: 600;
+        font-size: 0.8em;
+        padding: 10px;
+    }
+    .brands::-webkit-scrollbar {
+        display: none;
+    }
+    .brands {
+        margin: 15px;
+        justify-content: start;
+    }
+    
+    .personalDescription {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .personalDescription > div {
+        width: 100%;
+    }
+
+    .personalDescription > div > img {
+        width: 100%;
+    }
+
+    .personalDescription > div > h3 {
+        font-size: 1.5em;
+     }
+    
+    .personalDescription > div > p {
+        font-size: 0.7em;
+     }
+     .thirdMessage > h3 {
+        font-size: 1.8em;
+     }
+    
+     .thirdMessage > p {
+        font-size: 0.9em;
+     }
+     footer {
+        height: 15vh;
+     }
+    }
+
+@media screen and (min-width:721px) and (max-width: 1200px) {
+    header {
+        justify-content: space-between;
+    }
+    .navBar {
+        width: 70%;
+        font-size: 0.9em;
+    }
+    .message  {
+        align-items: center;
+        padding: 15px;
+        font-size: 0.8em;
+    }
+    .hero {
+        height: auto;
+    }
+    
+    .design {
+        padding: 15px;
+    }
+    
+    h3 {
+        font-size: 1.6em;
+    }
+    
+    .design p {
+        padding: 20px;
+        line-height: 1.1em;
+        font-weight: 300;
+    }
+
+    .brands::-webkit-scrollbar {
+        display: none;
+    }
+    .brands {
+        margin: 15px;
+        justify-content: start;
+    }
+
+    .personalDescription {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .personalDescription > div {
+        width: 100%;
+    }
+
+    .personalDescription > div > img {
+        width: 100%;
+    }
+
+    .personalDescription > div > h3 {
+        font-size: 3em;
+     }
+    
+    .personalDescription > div > p {
+        font-size: 0.9em;
+     }
+    
+  }
+  
